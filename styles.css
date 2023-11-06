@@ -1,31 +1,46 @@
-/* importing fonts */
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Borel&family=Cedarville+Cursive&family=Dancing+Script:wght@500;700&family=Mukta&family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,200;0,400;1,100&family=Roboto+Slab:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Borel&family=Cedarville+Cursive&family=Dancing+Script:wght@400;500;700&family=Mukta&family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,200;0,400;1,100&family=Roboto+Slab:wght@300&display=swap');
-*{
-  margin:0;
-  padding:0;
+/* Universal selector for resetting margin and padding on all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body background color */
+body {
   background-color: blanchedalmond;
-} 
-/* styling the main heading */
+}
 
-h3{
+/* ID selector for the main heading */
+#main-heading {
   font-family: 'Roboto Slab', serif;
-  margin:15px;
+  margin: 15px;
   color: rgb(8, 79, 0);
 }
-/* styling the sub headings */
-h1
-{
+
+/* Class selector for subheadings */
+.sub-heading {
   text-align: center;
   font-family: 'Roboto Slab', serif;
-  color:black;
+  color: black;
 }
-/* (designing the paragraphs) */
-p
-{
+
+/* Grouping of selectors for paragraphs with the same style */
+p, .special-paragraph {
   font-family: 'Dancing Script', cursive;
-  margin:12px;
-  color:red;
+  margin: 12px;
+  color: red;
   font-size: 1.5em;
+}
+
+/* Pseudo-class selector for hover effect on links */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Attribute selector for specific image alt attributes */
+img[alt="Drawing Image"] {
+  border: 2px solid blue;
 }
